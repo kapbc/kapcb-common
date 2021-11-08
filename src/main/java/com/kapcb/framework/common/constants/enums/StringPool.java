@@ -1,6 +1,5 @@
 package com.kapcb.framework.common.constants.enums;
 
-import com.kapcb.framework.common.constants.enums.ienum.IEnumPool;
 import org.springframework.lang.NonNull;
 
 /**

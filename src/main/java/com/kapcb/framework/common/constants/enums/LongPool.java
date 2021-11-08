@@ -1,8 +1,6 @@
 package com.kapcb.framework.common.constants.enums;
 
 
-import com.kapcb.framework.common.constants.enums.ienum.IEnumPool;
-
 /**
  * <a>Title: LongPool </a>
  * <a>Author: Kapcb <a>

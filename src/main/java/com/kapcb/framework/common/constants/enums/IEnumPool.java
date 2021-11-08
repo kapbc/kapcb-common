@@ -1,4 +1,4 @@
-package com.kapcb.framework.common.constants.enums.ienum;
+package com.kapcb.framework.common.constants.enums;
 
 /**
  * <a>Title: IEnumPool </a>
