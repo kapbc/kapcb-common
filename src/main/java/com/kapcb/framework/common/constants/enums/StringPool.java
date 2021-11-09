@@ -55,6 +55,10 @@ public enum StringPool implements IEnumPool<String> {
     IMAGE_SUFFIX_GIF("gif", "image with gif"),
     IMAGE_SUFFIX_ICO("ico", "image with ico"),
 
+
+    REQUEST_RETURN_VALUE("request return value is : {}", "return value"),
+    REQUEST_ERROR_MESSAGE("handler request error, error message is : {}", "error message"),
+    REQUEST_SERVER_NAME("server name is : {}", "server name"),
     REQUEST_URL("request url : {}", "request url"),
     REQUEST_URI("request uri : {}", "request uri"),
     PROCESS_COST_TIME("process cost time : {} ms", "process cost time"),
