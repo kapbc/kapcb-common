@@ -114,4 +114,15 @@ public class CommonResult<T> implements Serializable {
         return new CommonResult<T>(ResultCode.FORBIDDEN, data);
     }
 
+    public static <T> CommonResult<T> authenticationFailure() {
+        return new CommonResult<T>(ResultCode.LOGIN_FAIL, null);
+    }
+
+    public static <T> CommonResult<T> authenticationFailure(T data) {
+        return new CommonResult<T>(ResultCode.LOGIN_FAIL, data);
+    }
+
+    public static <T> CommonResult<T> authenticationFailure(String message) {
+        return new CommonResult<T>(ResultCode.LOGIN_FAIL.code(), message, null);
+    }
 }
