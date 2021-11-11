@@ -97,7 +97,8 @@ public enum StringPool implements IEnumPool<String> {
      */
     SERVER_APPLICATION_NAME("spring.application.name", "获取服务名称"),
     SERVER_PORT("server.port", "获取服务端口号"),
-    ;
+
+    AUTHENTICATION_VERIFICATION_CODE_KEY("Authentication&&code", "验证码key");
 
     private String value;
     private String description;
