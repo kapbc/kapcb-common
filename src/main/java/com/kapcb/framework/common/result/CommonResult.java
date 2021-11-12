@@ -50,7 +50,7 @@ public class CommonResult<T> implements Serializable {
         this.date = data;
     }
 
-    public static <T> CommonResult success() {
+    public static <T> CommonResult<T> success() {
         return new CommonResult<T>(ResultCode.SUCCESS);
     }
 

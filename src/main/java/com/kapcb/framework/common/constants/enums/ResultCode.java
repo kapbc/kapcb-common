@@ -18,7 +18,9 @@ public enum ResultCode implements IResultCode {
     VALIDATE_PARAM_FAIL("request param error", 401, "request param error"),
     UNAUTHORIZED("please login", 402, "un login or token expired"),
     FORBIDDEN("no resource permission", 403, "no resource access permission"),
-    LOGIN_FAIL("username or password error", 405, "login username or password error");
+    LOGIN_FAIL("username or password error", 405, "login username or password error"),
+    VALIDATE_CODE_ERROR("validate code error", 406, "login validate code error"),
+    VALIDATE_CODE_EXPIRED("validate code expired", 407, "login validate code expired");
 
     private String msg;
 

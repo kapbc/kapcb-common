@@ -22,14 +22,11 @@ import java.util.Objects;
 public class FileUtil {
 
     public static InputStream getResourcesFileInputStream(@NonNull String filename) {
-        log.info("file name is : {}", filename);
         return Thread.currentThread().getContextClassLoader().getResourceAsStream(StringPool.EMPTY_STRING.value() + filename);
     }
 
     public static String getPath() {
-        String path = Objects.requireNonNull(FileUtil.class.getResource(StringPool.SLASH.value())).getPath();
-        log.info("the path is : {}", path);
-        return path;
+        return Objects.requireNonNull(FileUtil.class.getResource(StringPool.SLASH.value())).getPath();
     }
 
 }
