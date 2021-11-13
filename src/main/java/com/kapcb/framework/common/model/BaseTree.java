@@ -19,9 +19,9 @@ import java.util.List;
  * @date 2021/11/8 20:57
  */
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder(toBuilder = true)
 public class BaseTree<T> implements Serializable {
 
     private static final long serialVersionUID = 1L;
