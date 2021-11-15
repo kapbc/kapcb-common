@@ -106,6 +106,10 @@ public class CommonResult<T> implements Serializable {
         return new CommonResult<T>(ResultCode.UNAUTHORIZED, data);
     }
 
+    public static <T> CommonResult<T> unauthorized(String msg) {
+        return new CommonResult<T>(ResultCode.UNAUTHORIZED.code(), msg, null);
+    }
+
     public static <T> CommonResult<T> forbidden() {
         return new CommonResult<T>(ResultCode.FORBIDDEN);
     }
