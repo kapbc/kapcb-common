@@ -20,7 +20,10 @@ public enum ResultCode implements IResultCode {
     FORBIDDEN("no resource permission", 403, "no resource access permission"),
     LOGIN_FAIL("username or password error", 405, "login username or password error"),
     VALIDATE_CODE_ERROR("validate code error", 406, "login validate code error"),
-    VALIDATE_CODE_EXPIRED("validate code expired", 407, "login validate code expired");
+    VALIDATE_CODE_EXPIRED("validate code expired", 407, "login validate code expired"),
+    LOGIN_STATUS_EXPIRED("login status expired", 408, "login status expired"),
+    CAN_NOT_FOUND_LOGIN_INFO("can not found login info", 409, "can not found login info");
+
 
     private String msg;
 
