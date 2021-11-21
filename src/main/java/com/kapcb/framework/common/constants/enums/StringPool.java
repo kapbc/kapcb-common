@@ -99,7 +99,11 @@ public enum StringPool implements IEnumPool<String> {
     SERVER_PORT("server.port", "获取服务端口号"),
 
     AUTHENTICATION_VERIFICATION_CODE_KEY("key", "前端请求验证码key"),
-    AUTHENTICATION_REDIS_STORE_KEY("arsk&&", "保存验证码的redis key");
+    AUTHENTICATION_REDIS_STORE_KEY("arsk&&", "保存验证码的redis key"),
+
+    CHARACTER_SET_UTF_8_UPPER("utf-8", "character set utf -8 upper case"),
+    CHARACTER_SET_UTF_8_LOWER("UTF-8", "character set utf -8 lower case"),
+    ;
 
     private String value;
     private String description;

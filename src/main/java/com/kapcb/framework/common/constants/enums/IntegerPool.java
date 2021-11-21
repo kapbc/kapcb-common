@@ -16,7 +16,10 @@ public enum IntegerPool implements IEnumPool<Integer> {
     ONE(1, "number 1"),
     FOUR(5, "number 4"),
     FIVE(5, "number 5"),
-    TEN(10, "number 10");
+    TEN(10, "number 10"),
+
+    RGB_0xFF0(0xFF000000, "rgb oxff00000"),
+    RGB_0xFFF(0xFFFFFFFF, "rgb oxfffffff");
 
     private Integer value;
     private String description;

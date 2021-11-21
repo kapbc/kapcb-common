@@ -18,7 +18,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PagePagination implements Serializable {
+public class PagePagination implements Page, Serializable {
 
     private static final long serialVersionUID = -3347283810042206322L;
 
