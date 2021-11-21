@@ -70,6 +70,7 @@ public enum StringPool implements IEnumPool<String> {
     /**
      * Http Servlet Request
      */
+    HTTP_REQUEST_USER_AGENT("User-Agent", "用户浏览器"),
     HTTP_REQUEST_UN_KNOWN("unknown", "未知"),
     HTTP_REQUEST_X_FOR_WARDED_FOR("x-forwarded-for", "获取ip地址请求中的key"),
     HTTP_REQUEST_PROXY_CLIENT_IP("Proxy-Client-IP", "获取ip地址请求中的key"),
@@ -103,7 +104,8 @@ public enum StringPool implements IEnumPool<String> {
 
     CHARACTER_SET_UTF_8_UPPER("utf-8", "character set utf -8 upper case"),
     CHARACTER_SET_UTF_8_LOWER("UTF-8", "character set utf -8 lower case"),
-    ;
+
+    REQUEST_CITY_HTTP_URL("http://whois.pconline.com.cn/ipJson.jsp?ip={}&json=true", "get user city info api url");
 
     private String value;
     private String description;
