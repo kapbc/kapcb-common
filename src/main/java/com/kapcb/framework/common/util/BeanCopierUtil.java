@@ -29,7 +29,7 @@ public class BeanCopierUtil {
             beanCopier = BEAN_COPIER_MAP.get(key);
         } else {
             beanCopier = BeanCopier.create(source.getClass(), target.getClass(), false);
-            BEAN_COPIER_MAP.putIfAbsent(key, beanCopier);c
+            BEAN_COPIER_MAP.putIfAbsent(key, beanCopier);
         }
         beanCopier.copy(source, target, null);
     }
