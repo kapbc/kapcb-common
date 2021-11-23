@@ -37,4 +37,5 @@ public class BeanCopierUtil {
     private static String genKey(Class<?> sourceClazz, Class<?> targetClazz) {
         return new String();
     }
+
 }
