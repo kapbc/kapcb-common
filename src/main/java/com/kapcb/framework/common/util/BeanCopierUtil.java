@@ -18,6 +18,9 @@ import java.util.concurrent.ConcurrentHashMap;
 @UtilityClass
 public class BeanCopierUtil {
 
+    /**
+     * 享元模式
+     */
     private static final ConcurrentHashMap<String, BeanCopier> BEAN_COPIER_MAP = new ConcurrentHashMap<>(6);
 
     public static void copy(Object source, Object target) {
@@ -35,7 +38,7 @@ public class BeanCopierUtil {
     }
 
     private static String genKey(Class<?> sourceClazz, Class<?> targetClazz) {
-        return new String();
+        return sourceClazz.getName() + targetClazz.getName();
     }
 
 }
