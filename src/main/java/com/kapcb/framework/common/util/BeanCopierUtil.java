@@ -19,6 +19,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class BeanCopierUtil {
 
     /**
+     * 线程安全的容器
      * 享元模式
      */
     private static final ConcurrentHashMap<String, BeanCopier> BEAN_COPIER_MAP = new ConcurrentHashMap<>(6);
