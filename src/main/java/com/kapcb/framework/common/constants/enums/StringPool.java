@@ -105,7 +105,12 @@ public enum StringPool implements IEnumPool<String> {
     CHARACTER_SET_UTF_8_UPPER("utf-8", "character set utf -8 upper case"),
     CHARACTER_SET_UTF_8_LOWER("UTF-8", "character set utf -8 lower case"),
 
-    REQUEST_CITY_HTTP_URL("http://whois.pconline.com.cn/ipJson.jsp?ip={}&json=true", "get user city info api url");
+    REQUEST_CITY_HTTP_URL("http://whois.pconline.com.cn/ipJson.jsp?ip={}&json=true", "get user city info api url"),
+
+    CLASS("class", "class name"),
+    METHOD_NAME("methodName", "method name"),
+    PACKAGE("package", "class package"),
+    ;
 
     private String value;
     private String description;
