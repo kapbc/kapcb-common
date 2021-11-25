@@ -3,7 +3,6 @@ package com.kapcb.framework.common.util;
 import lombok.experimental.UtilityClass;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
-import org.springframework.lang.NonNull;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -22,19 +21,19 @@ import java.util.Locale;
 @UtilityClass
 public class DateUtil {
 
-    public static String format(@NonNull Date date, @NonNull String pattern) {
+    public static String format(Date date, String pattern) {
         return new DateTime(date).toString(pattern);
     }
 
-    public static String format(@NonNull LocalDate localDate, @NonNull String pattern) {
+    public static String format(LocalDate localDate, String pattern) {
         return new DateTime(localDate).toString(pattern);
     }
 
-    public static String format(@NonNull LocalDateTime localDateTime, @NonNull String pattern) {
+    public static String format(LocalDateTime localDateTime, String pattern) {
         return new DateTime(localDateTime).toString(pattern);
     }
 
-    public static DateTime parseDateTime(@NonNull String dateTime, @NonNull String pattern, @NonNull Locale locale) {
+    public static DateTime parseDateTime(String dateTime, String pattern, Locale locale) {
         return DateTimeFormat.forPattern(pattern).withLocale(locale).parseDateTime(dateTime);
     }
 
