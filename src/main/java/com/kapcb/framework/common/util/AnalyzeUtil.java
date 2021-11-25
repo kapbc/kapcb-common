@@ -11,8 +11,6 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-import org.springframework.lang.NonNull;
-import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 
 import java.io.File;
@@ -46,7 +44,7 @@ public class AnalyzeUtil {
      * @param <T>             <T>
      * @return T
      */
-    public static <M, T extends AnalysisEventListener<M>> T analyzeExcel(@NonNull String docPath, @Nullable Integer headRowNumber, @NonNull Class<? extends M> modelClazz, @NonNull T analyzeListener) {
+    public static <M, T extends AnalysisEventListener<M>> T analyzeExcel(String docPath, Integer headRowNumber, Class<? extends M> modelClazz, T analyzeListener) {
         if (StringUtils.isBlank(docPath)) {
             throw new IllegalArgumentException("analyze excel param error, the doc path is : {}" + docPath);
         }
@@ -93,6 +91,4 @@ public class AnalyzeUtil {
         // 获取xml中的内容
         return elements;
     }
-
-
 }

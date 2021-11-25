@@ -3,7 +3,6 @@ package com.kapcb.framework.common.util;
 import com.kapcb.framework.common.constants.enums.StringPool;
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.lang.NonNull;
 
 import java.io.InputStream;
 import java.util.Objects;
@@ -21,7 +20,7 @@ import java.util.Objects;
 @UtilityClass
 public class FileUtil {
 
-    public static InputStream getResourcesFileInputStream(@NonNull String filename) {
+    public static InputStream getResourcesFileInputStream(String filename) {
         return Thread.currentThread().getContextClassLoader().getResourceAsStream(StringPool.EMPTY_STRING.value() + filename);
     }
 
