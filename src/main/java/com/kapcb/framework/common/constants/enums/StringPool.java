@@ -35,6 +35,8 @@ public enum StringPool implements IEnumPool<String> {
     SLASH("/", "斜杠"),
     DOT(".", "点"),
     EMPTY_OBJECT("{}", "空对象"),
+    EQUALS("=", "等哈"),
+    AND("&", "and"),
 
     PK_NULL_VALUE("0", "主键为空的字符串值"),
 
