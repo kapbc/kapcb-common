@@ -100,6 +100,7 @@ public enum StringPool implements IEnumPool<String> {
      */
     SERVER_APPLICATION_NAME("spring.application.name", "获取服务名称"),
     SERVER_PORT("server.port", "获取服务端口号"),
+    MAIN("main", "main method"),
 
     AUTHENTICATION_VERIFICATION_CODE_KEY("key", "前端请求验证码key"),
     AUTHENTICATION_REDIS_STORE_KEY("arsk&&", "保存验证码的redis key"),

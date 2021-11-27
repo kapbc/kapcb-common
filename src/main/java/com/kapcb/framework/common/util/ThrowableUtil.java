@@ -1,5 +1,8 @@
 package com.kapcb.framework.common.util;
 
+import com.kapcb.framework.common.constants.enums.StringPool;
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
@@ -12,14 +15,17 @@ import java.io.StringWriter;
  * @version 1.0.0
  * @date 2021/11/19 23:05
  */
+@Slf4j
 public class ThrowableUtil {
 
     public static String getStackTrace(Throwable throwable) {
-        StringWriter stringWriter = new StringWriter();
-        try (PrintWriter printWriter = new PrintWriter(stringWriter)) {
+        String stackTrace = StringPool.EMPTY_STRING.value();
+        try (StringWriter stringWriter = new StringWriter(); PrintWriter printWriter = new PrintWriter(stringWriter, true)) {
             throwable.printStackTrace(printWriter);
-            return stringWriter.toString();
+            stackTrace = stringWriter.toString();
+        } catch (Exception e) {
+            log.error("get stack trace error, error message is : {}", e.getMessage());
         }
+        return stackTrace;
     }
-
 }
