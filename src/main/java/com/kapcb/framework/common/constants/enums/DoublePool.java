@@ -25,4 +25,5 @@ public enum DoublePool {
     public Double value(){
         return this.value;
     }
+    
 }
