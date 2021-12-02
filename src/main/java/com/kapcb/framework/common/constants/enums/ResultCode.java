@@ -46,4 +46,5 @@ public enum ResultCode implements IResultCode {
     public int code() {
         return this.code;
     }
+    
 }
