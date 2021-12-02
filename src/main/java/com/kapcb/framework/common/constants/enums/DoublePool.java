@@ -15,7 +15,6 @@ public enum DoublePool {
     ONE_HUNDRED_EIGHTY_DEGREES(180.0, "one hundred and eighty degrees");
     
     private Double value;
-
     private String description;
 
     DoublePool(Double value, String description) {
