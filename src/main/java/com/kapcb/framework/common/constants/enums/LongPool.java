@@ -29,4 +29,5 @@ public enum LongPool implements IEnumPool<Long> {
     public Long value() {
         return this.value;
     }
+    
 }
