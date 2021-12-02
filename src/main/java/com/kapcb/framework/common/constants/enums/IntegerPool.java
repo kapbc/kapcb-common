@@ -36,4 +36,5 @@ public enum IntegerPool implements IEnumPool<Integer> {
     public Integer value() {
         return this.value;
     }
+    
 }
