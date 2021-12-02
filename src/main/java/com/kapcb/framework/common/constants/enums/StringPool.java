@@ -124,7 +124,6 @@ public enum StringPool implements IEnumPool<String> {
     }
 
     @Override
-    @NonNull
     public String value() {
         return this.value;
     }
