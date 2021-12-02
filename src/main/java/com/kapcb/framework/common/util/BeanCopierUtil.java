@@ -41,4 +41,5 @@ public class BeanCopierUtil {
     private static String genKey(Class<?> sourceClazz, Class<?> targetClazz) {
         return sourceClazz.getName() + targetClazz.getName();
     }
+    
 }
