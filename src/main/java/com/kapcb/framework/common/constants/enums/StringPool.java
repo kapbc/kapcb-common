@@ -128,4 +128,5 @@ public enum StringPool implements IEnumPool<String> {
     public String value() {
         return this.value;
     }
+    
 }
