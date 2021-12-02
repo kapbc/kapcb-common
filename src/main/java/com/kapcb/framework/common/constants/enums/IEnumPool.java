@@ -17,4 +17,5 @@ public interface IEnumPool<T> {
      * @return T
      */
     T value();
+    
 }
