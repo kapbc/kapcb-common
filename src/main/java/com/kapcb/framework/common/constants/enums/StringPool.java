@@ -1,6 +1,5 @@
 package com.kapcb.framework.common.constants.enums;
 
-import org.springframework.lang.NonNull;
 
 /**
  * <a>Title: StringPool </a>
