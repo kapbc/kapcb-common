@@ -13,6 +13,7 @@ public enum DoublePool {
 
     EARTH_RADIUS(6378.137, "earth‘s radius"),
     ONE_HUNDRED_EIGHTY_DEGREES(180.0, "one hundred and eighty degrees");
+    
     private Double value;
 
     private String description;
