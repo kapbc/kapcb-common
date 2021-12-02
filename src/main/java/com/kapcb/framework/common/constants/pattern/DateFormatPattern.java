@@ -12,4 +12,5 @@ import cn.hutool.core.date.DatePattern;
  * @date 2021/11/8 20:46
  */
 public class DateFormatPattern extends DatePattern {
+  
 }
