@@ -34,6 +34,8 @@ public enum StringPool implements IEnumPool<String> {
     SLASH("/", "斜杠"),
     DOT(".", "点"),
     EMPTY_OBJECT("{}", "空对象"),
+    OPENING_PARENTHESIS("{", "开括号"),
+    CLOSED_PARENTHESIS("}", "关括号"),
     EQUALS("=", "等哈"),
     AND("&", "and"),
 
@@ -126,5 +128,5 @@ public enum StringPool implements IEnumPool<String> {
     public String value() {
         return this.value;
     }
-    
+
 }
