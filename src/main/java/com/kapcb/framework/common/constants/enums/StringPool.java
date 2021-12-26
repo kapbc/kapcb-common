@@ -114,7 +114,8 @@ public enum StringPool implements IEnumPool<String> {
     CLASS("class", "class name"),
     METHOD_NAME("methodName", "method name"),
     PACKAGE("package", "class package"),
-    ;
+
+    BACK_SLASH_N("\n", "the back slash n");
 
     private String value;
     private String description;
